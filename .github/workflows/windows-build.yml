@@ -16,4 +16,6 @@ jobs:
           Copy-Item dist/Workstation_TTS_v1.exe Workstation_TTS_v1/
           Compress-Archive -Path Workstation_TTS_v1 -DestinationPath Workstation_TTS_v1.zip -Force
       - uses: actions/upload-artifact@v4
-        with: { name: Workstation_TTS_v1; path: Workstation_TTS_v1.zip }
+        with:
+          name: Workstation_TTS_v1
+          path: Workstation_TTS_v1.zip
